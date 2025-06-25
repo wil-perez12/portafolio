@@ -3,3 +3,26 @@
   visibility: hidden;
 }
 
+.open{
+  display:inline;
+  visibility: visible;
+}
+
+@media(min-width: 1024px) {
+  .toggle {
+    display: none;
+    visibility: hidden;
+  }
+  .line{
+    display: none;
+  }
+}
+@media(min-width: 1280px) {
+  .toggle {
+    display: none;
+    visibility: hidden;
+  }
+  .line{
+    display: none;
+  }
+}

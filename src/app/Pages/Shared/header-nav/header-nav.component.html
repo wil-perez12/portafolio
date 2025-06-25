@@ -1,21 +1,25 @@
-<div class="nav w-full p-5 flex flex-col lg:flex-row items-center justify-around xl:gap-40 bg-slate-900">
+<div class="nav w-full p-5 flex flex-col justify-around bg-slate-900  ">
 
-  <div class="text flex  gap-2 ml-2 justify-center items-center">
+  <div class="text flex  gap-2 ml-2 justify-between items-center lg:align-center lg:ml-0">
+    <div class="logo flex gap-2">
+      <h3 class="text-2xl font-bold bg-gradient-to-bl from-violet-500 to-fuchsia-500 bg-clip-text text-transparent">
+        <i class="fa-solid fa-lightbulb text-yellow-300"></i>
+        DevMaster
+      </h3>
+    </div>
 
-    <i class="fa-solid fa-bolt text-2xl font-bold bg-gradient-to-bl from-violet-500 to-fuchsia-500 bg-clip-text text-transparent"></i>
-    <h3 class="text-2xl font-bold bg-gradient-to-bl from-violet-500 to-fuchsia-500 bg-clip-text text-transparent">DevMaster</h3>
-
-    <span class="ml-14" (click)="toggleMenu()">
+    <span class="toggle" (click)="toggleMenu()">
       <i class="fa fa-bars text-2xl bg-gradient-to-bl from-violet-500 to-fuchsia-500 bg-clip-text text-transparent" aria-hidden="true"></i>
     </span>
   </div>
 
-  <div [ngClass]="{'close': isOpen}" class="routes text-sky-50 ml-5 flex gap-3 justify-start flex-col lg:flex-row">
-    <a class="ml-4"> <i class="fa-solid fa-rocket mr-1 mt-3 bg-gradient-to-bl from-violet-500 to-fuchsia-500 bg-clip-text text-transparent"></i> Inicio</a>
-    <a class="ml-4"> <i class="fa-solid fa-user mr-1 bg-gradient-to-bl from-violet-500 to-fuchsia-500 bg-clip-text text-transparent"></i> Sobre mí</a>
-    <a class="ml-4"> <i class="fa-solid fa-bolt mr-1 bg-gradient-to-bl from-violet-500 to-fuchsia-500 bg-clip-text text-transparent"></i> Skills</a>
-    <a class="ml-4"> <i class="fa-solid fa-briefcase mr-1 bg-gradient-to-bl from-violet-500 to-fuchsia-500 bg-clip-text text-transparent"></i> Proyectos</a>
-    <a class="ml-4"> <i class="fa-solid fa-envelope mr-1 bg-gradient-to-bl from-violet-500 to-fuchsia-500 bg-clip-text text-transparent"></i> Contacto</a>
+  <div [ngClass]="{'close': isOpen}" class="routes text-sky-50 ml-5 flex gap-3 justify-start flex-col lg:flex lg:flex-row lg:justify-center">
+    <div class="line md:w-full mt-3 border-b-1 border-violet-900 text-violet-800 lg:collapse"></div>
+    <a class="ml-4 lg:flex lg:mr-2 lg:p-2 lg:items-center xl:hover:border-yellow-300 xl:hover:border-b-2 duration-100"> <i class="fa-solid fa-user mr-2 bg-gradient-to-bl from-violet-500 to-fuchsia-500 bg-clip-text text-transparent"></i> Sobre mí</a>
+    <a class="ml-4 lg:flex lg:mr-2 lg:p-2 lg:items-center xl:hover:border-yellow-300 xl:hover:border-b-2 duration-100"> <i class="fa-solid fa-rocket  mr-2 mt-1 bg-gradient-to-bl from-violet-500 to-fuchsia-500 bg-clip-text text-transparent"></i> Inicio</a>
+    <a class="ml-4 lg:flex lg:mr-2 lg:p-2 lg:items-center xl:hover:border-yellow-300 xl:hover:border-b-2 duration-100"> <i class="fa-solid fa-bolt mr-2 bg-gradient-to-bl from-violet-500 to-fuchsia-500 bg-clip-text text-transparent"></i> Skills</a>
+    <a class="ml-4 lg:flex lg:mr-2 lg:p-2 lg:items-center xl:hover:border-yellow-300 xl:hover:border-b-2 duration-100"> <i class="fa-solid fa-briefcase mr-2 bg-gradient-to-bl from-violet-500 to-fuchsia-500 bg-clip-text text-transparent"></i> Proyectos</a>
+    <a class="ml-4 lg:flex lg:mr-2 lg:p-2 lg:items-center xl:hover:border-yellow-300 xl:hover:border-b-2 duration-100"> <i class="fa-solid fa-envelope mr-2 bg-gradient-to-bl from-violet-500 to-fuchsia-500 bg-clip-text text-transparent"></i> Contacto</a>
   </div>
 </div>
 
